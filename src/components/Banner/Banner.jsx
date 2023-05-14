@@ -17,7 +17,7 @@ const Banner = () => {
       <Link><button className="primary-font text-black p-4 mt-5 ml-52 bg-[#DB995A] btn rounded-none " >Learn More</button></Link>
       </div>
      </div>
-     <div className="bg-[#ECEAE3] p-20 flex text-sm">
+     <div className="bg-[#ECEAE3] p-20 lg:flex text-sm">
         <div className="pr-5">
           <img src={icon1} alt="" />
           <h3 className="primary-font text-3xl font-semibold py-3">Awesome Aroma</h3>
