@@ -2,6 +2,8 @@ import Footer from "../../shared/Footer/Footer";
 import Navbar from "../../shared/Navbar/Navbar";
 import bg from "../../assets/images/more/11.png";
 import Swal from 'sweetalert2';
+import { Link } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa";
 
 const AddCoffee = () => {
     const handleAddCoffee = event =>{
@@ -40,6 +42,12 @@ const AddCoffee = () => {
     return (
         <>
             <Navbar></Navbar>
+            <Link to={'/'}>
+                <div className="primary-font mt-20 mx-20 flex items-center">
+                <FaArrowLeft></FaArrowLeft>
+                <h3 className=" text-3xl"> Back to home</h3>
+                </div>
+            </Link>
            <div style={{backgroundImage:`url(${bg})`}} className="text-center p-32">
             <div className="bg-[#F4F3F0] p-24">
                 <h3 className="primary-font text-3xl">Add New Coffee</h3>
